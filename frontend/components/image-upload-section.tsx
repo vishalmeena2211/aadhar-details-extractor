@@ -84,18 +84,18 @@ export function ImageUploadSection({ side, image, onImageUpload, isLoading }: Im
                 {showCamera && (
                     <div className="relative aspect-video">
                         <WebCamera ref={cameraRef} numberOfCamerasCallback={setNumberOfCameras} errorMessages={{ noCameraAccessible: 'No camera device accessible', permissionDenied: 'Permission denied', switchCamera: 'It is not possible to switch camera to different one because there is only one video device accessible', canvas: 'Canvas is not supported' }} />
-                        <div className="absolute bottom-4 left-0 right-0 flex justify-around sm:space-x-2">
-                            <Button onClick={handleCameraCapture} className="w-fit md:w-full">
-                                <Camera className="md:mr-2 h-4 w-4" />
-                                <span className='hidden md:flex'>Capture</span>
+                        <div className="absolute bottom-4 left-0 right-0 flex justify-around">
+                            <Button onClick={handleCameraCapture} className="w-fit">
+                                <Camera className="lg:mr-2 h-4 w-4" />
+                                <span className='hidden lg:flex'>Capture</span>
                             </Button>
-                            <Button onClick={() => setShowCamera(false)} className="w-fit md:w-full">
-                                <LucideCameraOff className="md:mr-2 h-4 w-4" />
-                                <span className='hidden md:flex'>Cancel</span>
+                            <Button onClick={() => setShowCamera(false)} className="w-fit">
+                                <LucideCameraOff className="lg:mr-2 h-4 w-4" />
+                                <span className='hidden lg:flex'>Cancel</span>
                             </Button>
-                            <Button disabled={numberOfCameras <= 1} onClick={() => { cameraRef?.current?.switchCamera() }} className="w-fit md:w-full">
-                                <SwitchCamera className="md:mr-2 h-4 w-4" />
-                                <span className='hidden md:flex'>Switch Camera</span>
+                            <Button disabled={numberOfCameras <= 1} onClick={() => { cameraRef?.current?.switchCamera() }} className="w-fit">
+                                <SwitchCamera className="lg:mr-2 h-4 w-4" />
+                                <span className='hidden lg:flex'>Switch Camera</span>
                             </Button>
                         </div>
                     </div>
