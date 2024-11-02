@@ -4,6 +4,9 @@
 
 Aadhar Extractor is an application designed to extract details from Aadhar cards. The application features a frontend built with Next.js and a backend server using Express.js. It allows users to upload or capture an image of an Aadhar card, parse the details, save them to a database, and provide the parsed data in a key-value format for easy copying.
 
+![image](https://github.com/user-attachments/assets/b19ccdce-b8ed-4ac2-9a2f-2ea3124196ec)
+
+
 ## Features
 
 - **Image Upload**: Upload an image of the Aadhar card directly.
@@ -16,7 +19,7 @@ Aadhar Extractor is an application designed to extract details from Aadhar cards
 
 - **Frontend**: Next.js
 - **Backend**: Express.js
-- **Database**: [Your Database Here]
+- **Database**: MongoDB
 
 ## Installation
 
