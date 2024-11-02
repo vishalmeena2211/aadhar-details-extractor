@@ -1,1 +1,1 @@
-export const BASE_URL = 'http://localhost:5000/api/v1/parse-aadhar'
+export const BASE_URL = 'https://aadhar-test-server.visshu.me/api/v1/parse-aadhar'
